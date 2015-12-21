@@ -532,6 +532,7 @@
                             <constraint firstItem="oa2-Ii-a9h" firstAttribute="leading" secondItem="KHP-pm-7JI" secondAttribute="leading" id="dYn-qk-w2d"/>
                             <constraint firstAttribute="trailing" secondItem="oa2-Ii-a9h" secondAttribute="trailing" id="gQF-ha-PGL"/>
                             <constraint firstItem="3lT-ce-nhr" firstAttribute="top" secondItem="9oQ-cg-xq0" secondAttribute="bottom" constant="2" id="gkv-sc-mUh"/>
+                            <constraint firstItem="9oQ-cg-xq0" firstAttribute="leading" secondItem="FFd-Hp-hX8" secondAttribute="trailing" constant="29" id="h5y-3s-JjU"/>
                             <constraint firstAttribute="trailing" secondItem="9oQ-cg-xq0" secondAttribute="trailing" constant="20" id="jX2-gb-Fu6"/>
                             <constraint firstItem="FFd-Hp-hX8" firstAttribute="top" secondItem="oa2-Ii-a9h" secondAttribute="bottom" constant="14" id="jlF-C9-i9a"/>
                             <constraint firstItem="oa2-Ii-a9h" firstAttribute="top" secondItem="KHP-pm-7JI" secondAttribute="top" id="k83-J4-pHb"/>
@@ -835,6 +836,11 @@
                                     <constraint firstAttribute="height" constant="30" id="Uha-el-kKm"/>
                                 </constraints>
                                 <state key="normal" title="Log"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Uha-el-kKm"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="btnLog:" destination="sy7-TA-L4G" eventType="touchUpInside" id="j6s-QV-fef"/>
                                 </connections>
@@ -850,34 +856,34 @@
                                     <segue destination="gj5-JO-DzM" kind="show" id="AJg-5e-Z3O"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I5F-k1-H5k">
-                                <rect key="frame" x="49" y="118" width="223" height="331"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="I5F-k1-H5k" secondAttribute="height" multiplier="223:331" id="8NA-4t-jys"/>
-                                </constraints>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-8L-00e">
                                 <rect key="frame" x="20" y="83" width="280" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fdg-8L-00e" secondAttribute="height" multiplier="40:3" id="vST-JG-N1m"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I5F-k1-H5k">
+                                <rect key="frame" x="59" y="133" width="202" height="315"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I5F-k1-H5k" secondAttribute="height" multiplier="223:331" constant="-10.220543806646532" id="8NA-4t-jys"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0KC-Xl-TDE" firstAttribute="leading" secondItem="ZRg-Vs-9P9" secondAttribute="leading" constant="49" id="AJE-BH-lsX"/>
-                            <constraint firstItem="W62-7h-j8u" firstAttribute="top" secondItem="I5F-k1-H5k" secondAttribute="bottom" constant="16" id="AeA-7r-UzM"/>
-                            <constraint firstItem="I5F-k1-H5k" firstAttribute="top" secondItem="fdg-8L-00e" secondAttribute="bottom" constant="14" id="C81-dt-RfI"/>
+                            <constraint firstItem="W62-7h-j8u" firstAttribute="top" secondItem="I5F-k1-H5k" secondAttribute="bottom" constant="17" id="AeA-7r-UzM"/>
+                            <constraint firstItem="I5F-k1-H5k" firstAttribute="top" secondItem="fdg-8L-00e" secondAttribute="bottom" constant="29" id="C81-dt-RfI"/>
                             <constraint firstAttribute="trailing" secondItem="W62-7h-j8u" secondAttribute="trailing" constant="48" id="Eql-G8-GFW"/>
-                            <constraint firstItem="I5F-k1-H5k" firstAttribute="leading" secondItem="ZRg-Vs-9P9" secondAttribute="leading" constant="49" id="MpU-q8-bgy"/>
-                            <constraint firstItem="0KC-Xl-TDE" firstAttribute="top" secondItem="I5F-k1-H5k" secondAttribute="bottom" constant="16" id="PdE-UO-9UZ"/>
+                            <constraint firstItem="I5F-k1-H5k" firstAttribute="leading" secondItem="ZRg-Vs-9P9" secondAttribute="leading" constant="59" id="MpU-q8-bgy"/>
+                            <constraint firstItem="0KC-Xl-TDE" firstAttribute="top" secondItem="I5F-k1-H5k" secondAttribute="bottom" constant="17" id="PdE-UO-9UZ"/>
                             <constraint firstItem="SfT-KB-JLO" firstAttribute="top" secondItem="W62-7h-j8u" secondAttribute="bottom" constant="24" id="Pog-KU-WVP"/>
                             <constraint firstItem="SfT-KB-JLO" firstAttribute="top" secondItem="0KC-Xl-TDE" secondAttribute="bottom" constant="24" id="RSO-3F-Bqj"/>
-                            <constraint firstAttribute="trailing" secondItem="I5F-k1-H5k" secondAttribute="trailing" constant="48" id="jTf-jw-Ula"/>
+                            <constraint firstAttribute="trailing" secondItem="I5F-k1-H5k" secondAttribute="trailing" constant="59" id="jTf-jw-Ula"/>
                             <constraint firstItem="fdg-8L-00e" firstAttribute="leading" secondItem="ZRg-Vs-9P9" secondAttribute="leading" constant="20" id="pIE-Ne-DHy"/>
                             <constraint firstAttribute="trailing" secondItem="fdg-8L-00e" secondAttribute="trailing" constant="20" id="rwN-cc-TMG"/>
                             <constraint firstItem="fdg-8L-00e" firstAttribute="top" secondItem="jNc-D5-BgV" secondAttribute="bottom" constant="19" id="tS8-Vd-Y7R"/>
@@ -912,46 +918,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uc-VP-mKy" customClass="BEMSimpleLineGraphView">
-                                <rect key="frame" x="16" y="84" width="288" height="182"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.1843652885" green="0.97827888259999995" blue="0.97197919030000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1Uc-VP-mKy" secondAttribute="height" multiplier="280:177" id="f6Q-cg-PET"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableBezierCurve" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableYAxisLabel" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableXAxisLabel" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaBottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaTop">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaLine">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthLine">
-                                        <real key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthReferenceLines">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="sizePoint">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="colorPoint">
-                                        <color key="value" red="0.82161458330000003" green="0.82161458330000003" blue="0.82161458330000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="colorXaxisLabel">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="colorYaxisLabel">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa6-7E-eTE">
                                 <rect key="frame" x="20" y="284" width="57" height="30"/>
                                 <constraints>
@@ -974,6 +940,15 @@
                                     <action selector="btn1Year:" destination="gj5-JO-DzM" eventType="touchUpInside" id="OYv-TL-1VJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payments :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJF-e0-jKH">
+                                <rect key="frame" x="55" y="353" width="85" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eKJ-kJ-7sB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shi-IG-87N">
                                 <rect key="frame" x="148" y="353" width="144" height="21"/>
                                 <constraints>
@@ -1022,15 +997,46 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payments :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJF-e0-jKH">
-                                <rect key="frame" x="55" y="353" width="85" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uc-VP-mKy" customClass="BEMSimpleLineGraphView">
+                                <rect key="frame" x="16" y="84" width="288" height="182"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="eKJ-kJ-7sB"/>
+                                    <constraint firstAttribute="width" secondItem="1Uc-VP-mKy" secondAttribute="height" multiplier="280:177" id="f6Q-cg-PET"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableBezierCurve" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableYAxisLabel" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableXAxisLabel" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaBottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaTop">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaLine">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthLine">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthReferenceLines">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sizePoint">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorPoint">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorXaxisLabel">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorYaxisLabel">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1288,6 +1294,6 @@
         <image name="submit" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yY7-uH-lHI"/>
+        <segue reference="ebc-8s-0u1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -34,6 +34,9 @@
     //call function to get time between last payment
     [self getDateInterval];
     
+    self.paymentGraph.delegate = self;
+    self.paymentGraph.dataSource = self;
+    
     //Reloading the Graph
     [self.paymentGraph reloadGraph];
     self.paymentGraph.enableBezierCurve = YES;

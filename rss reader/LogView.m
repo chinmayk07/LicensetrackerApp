@@ -116,6 +116,7 @@ NSString *presentdate;
     //int results = [self.database insertLogData:self.lblcurrentDate.text];
     if(results == 1) {
         [self displayAlert:@"Date and time Logged"];
+        [self.tblLogView reloadData];
     }
     [self.tblLogView reloadData];
 }

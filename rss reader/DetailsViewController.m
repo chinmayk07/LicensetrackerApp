@@ -37,7 +37,7 @@
     NSLog(@"ROWVALUE : %ld",(long)rowvalue);
     
     //NSLog(@"ARRAY %lu",(unsigned long)linkdetails.count);
-    self.articleNo.text = [NSString stringWithFormat:@"Article %ld ",(long)rowvalue1];
+    self.articleNo.text = [NSString stringWithFormat:@"Article %ld / %lu ",(long)rowvalue1,(unsigned long)[linkdetails count]];
     
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
@@ -145,9 +145,11 @@
 
 - (void)next {
     
-    NSLog(@"Before NEXT : %ld",(long)rowvalue1);
+    NSLog(@"Before NEXT : %ld",(long)rowvalue);
     rowvalue=rowvalue +1;
-    NSLog(@"After NEXT : %ld",(long)rowvalue2);
+    rowvalue2 = rowvalue +1;
+    NSLog(@"After NEXT : %ld",(long)rowvalue);
+    NSLog(@"After NEXT new : %ld",(long)rowvalue2);
     
     if(rowvalue >= [self lastlink]) {
         [self displayAlert:@"This is the Last Article"];
@@ -155,6 +157,8 @@
     else
     {
         REQUIREDDATA = [linkdetails objectAtIndex:rowvalue];
+        
+        NSLog(@"%lu",(unsigned long)[linkdetails count]);
         
         asdfgh = [REQUIREDDATA valueForKey:@"link"];
         NSLog(@"REQUIRED  : %@",asdfgh);
@@ -165,16 +169,16 @@
         
         
         NSLog(@"REQUIRED DATA : %@",REQUIREDDATA);
-        self.articleNo.text = [NSString stringWithFormat:@"Article %ld ",(long)rowvalue];
+        self.articleNo.text = [NSString stringWithFormat:@"Article %ld / %lu ",(long)rowvalue2, (unsigned long)[linkdetails count]];
     }
 }
 
 - (void)previous {
     
-    NSLog(@"Before PREV : %ld",(long)rowvalue1);
+    NSLog(@"Before PREV : %ld",(long)rowvalue);
     rowvalue = rowvalue - 1;
     rowvalue2 = rowvalue1 - 1;
-    NSLog(@"After PREV : %ld",(long)rowvalue3);
+    NSLog(@"After PREV : %ld",(long)rowvalue);
     
     if(rowvalue < 0) {
         [self displayAlert:@"This is the First Article"];
@@ -191,7 +195,7 @@
         
         NSLog(@"REQUIRED DATA : %@",REQUIREDDATA);
         
-        self.articleNo.text = [NSString stringWithFormat:@"Article %ld ",(long)rowvalue2];
+        self.articleNo.text = [NSString stringWithFormat:@"Article %ld / %lu",(long)rowvalue2,(unsigned long)[linkdetails count]];
         
     }
     
