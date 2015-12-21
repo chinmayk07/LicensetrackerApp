@@ -190,8 +190,8 @@
         
         [self hydrateDatasets];
         
-        NSLog(@"keys = %@ values = %@ and graphValues =%@ and graphDates=%@",weekCount,weekDate,graphValues,graphDates);
-        NSLog(@"Array of values = %lu",(unsigned long)[self.arrayOfValues count]);
+        //NSLog(@"keys = %@ values = %@ and graphValues =%@ and graphDates=%@",weekCount,weekDate,graphValues,graphDates);
+        //NSLog(@"Array of values = %lu",(unsigned long)[self.arrayOfValues count]);
         //NSLog(@"Key of values = %@",[[]self.arrayOfValues objectAtIndex:index] doubleValue]);
         [self.paymentGraph reloadGraph];
         
